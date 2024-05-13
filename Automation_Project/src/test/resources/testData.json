@@ -1,0 +1,9 @@
+{
+  "FirstName" : "Hala",
+  "LastName" : "Abdelkader",
+  "Password" : "123456", "WrongPassword" : "1234567",
+  "BirthDay": "6", "BirthMonth": "5", "BirthYear": "1999",
+  "City": "London", "Address": "31 Ahmed fahmy street",
+  "ZipCode" : "11235", "PhoneNumber" : "0102345673",
+  "ReviewTitle" : "A must use product", "ReviewText" : "This product is very nice"
+}
