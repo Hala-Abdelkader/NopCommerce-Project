@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="127.672" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Testing Invalid Registration" name="Register with invalid credentials" time="25.736">
+<system-out><![CDATA[
+Given User navigate to the registration page................................passed
+And User enter name and email...............................................passed
+And User register with unmatching passwords.................................passed
+Then User should see an error message.......................................passed
+And User go back to the home page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing Shopping Workflow" name="Main shopping workflow" time="62.59">
+<system-out><![CDATA[
+Given User navigate to the login page.......................................passed
+When User enter a valid username and password...............................passed
+And User search for a product...............................................passed
+And User add the product to cart............................................passed
+And User browse for books...................................................passed
+And User add a book to the cart.............................................passed
+And User go to the cart.....................................................passed
+And User remove the book from the cart......................................passed
+And User proceed to checkout................................................passed
+And User provide invalid payment details....................................passed
+Then User should see a payment error message................................passed
+And User logout.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing wishlist" name="Add item to Wishlist" time="26.579">
+<system-out><![CDATA[
+Given User browse for an item...............................................passed
+And User add the item to my wishlist........................................passed
+And User browse for another item............................................passed
+Then User should see the items in the wishlist..............................passed
+And User change the Qty of the second item..................................passed
+And user the click update wishlist..........................................passed
+Then The user should see the new qty and price..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing Tags" name="Browse product by tag" time="12.258">
+<system-out><![CDATA[
+Given User browse computers category........................................passed
+And User click view all tags................................................passed
+Then User should see all the tags...........................................passed
+And User click on shoes tag.................................................passed
+Then User show see the product under this tags..............................passed
+]]></system-out>
+</testcase>
+</testsuite>
