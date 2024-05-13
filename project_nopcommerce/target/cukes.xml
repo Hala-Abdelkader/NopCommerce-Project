@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="144.669" tests="11" skipped="0" failures="2" errors="0">
+<testcase classname="Registering New Users" name="Registering Valid New User Account" time="10.457">
+<system-out><![CDATA[
+Given user go to Registration page..........................................passed
+When user select gender male................................................passed
+And user enters FirstName and Last Name.....................................passed
+And user selects date of birth..............................................passed
+And user enters valid email.................................................passed
+And user enters valid password..............................................passed
+And user clicks on Register Button..........................................passed
+Then Registration is Successful.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario of Testing Contact Us Messaging" name="User can send Enquiry through Contact Us page without registering" time="9.036">
+<system-out><![CDATA[
+Given user go to Contact Us page............................................passed
+When user enters name.......................................................passed
+And user enters email.......................................................passed
+And user enters inquiry.....................................................passed
+And user clicks submit......................................................passed
+Then user sees message sent successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario of Buying a Product and Confirming Order" name="User by product through given url" time="22.632">
+<system-out><![CDATA[
+Given User LogIn Valid......................................................passed
+When User Navigates to Performance PC Product Page..........................passed
+And User Clicks on Add to Cart..............................................passed
+And User Clicks on Shopping Cart Icon.......................................passed
+And User Clicks on Checkout.................................................passed
+And User Enter Valid Credentials............................................passed
+And User Chooses Ground Shipping Method.....................................passed
+And User Chooses Cheque Payment Method......................................passed
+And User Clicks On Continue in Payment Info Section.........................passed
+And User Clicks On Confirm Button...........................................passed
+Then Order is successfully processed........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario of Buying a Product and Confirming Order" name="User can buy product from featured product then check the method" time="14.069">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to find element with locator By.className: order-number
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: RemoteWebDriver">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.className: order-number
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.example.pages.P07_Checkout.ProcessCompleted(P07_Checkout.java:105)
+	at org.example.stepDefs.D05_BuyProductDef.window_is_redirected_to_thank_you_page(D05_BuyProductDef.java:84)
+	at ✽.Order is successfully processed(file:///C:/Users/nunam/IdeaProjects/project_nopcommerce/src/main/resources/features/F04_BuyProduct.feature:27)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User LogIn Valid......................................................passed
+When User select product from featured products.............................passed
+And User click on add to cart...............................................passed
+And User Clicks on Shopping Cart Icon.......................................passed
+And User Clicks on Checkout.................................................passed
+And User Enter Valid Credentials............................................passed
+And User Chooses Ground Shipping Method.....................................passed
+And User Chooses Cheque Payment Method......................................passed
+And User Clicks On Continue in Payment Info Section.........................passed
+And User Clicks On Confirm Button...........................................passed
+Then Order is successfully processed........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario of Buying a Product and Confirming Order" name="Browsing through website adding/removing items and checking out with an invalid Credit Card" time="21.227">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#shippingoption_0&quot;}
+  (Session info: chrome=124.0.6367.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [664db0508c65da235dcd9d351a9e35a6, findElement {value=shippingoption_0, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\nunam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 664db0508c65da235dcd9d351a9e35a6">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#shippingoption_0"}
+  (Session info: chrome=124.0.6367.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [664db0508c65da235dcd9d351a9e35a6, findElement {value=shippingoption_0, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\nunam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 664db0508c65da235dcd9d351a9e35a6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.example.pages.P07_Checkout.clickGroundShipping(P07_Checkout.java:45)
+	at org.example.stepDefs.D05_BuyProductDef.user_chooses_ground_shipping_method(D05_BuyProductDef.java:65)
+	at ✽.User Chooses Ground Shipping Method(file:///C:/Users/nunam/IdeaProjects/project_nopcommerce/src/main/resources/features/F04_BuyProduct.feature:39)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User LogIn Valid......................................................passed
+And User search for a product...............................................passed
+And User add the product to cart............................................passed
+And User browse for books...................................................passed
+And User add a book to the cart.............................................passed
+And User go to the cart.....................................................passed
+And User remove the book from the cart......................................passed
+And User Clicks on Checkout.................................................passed
+And User Enter Valid Credentials............................................passed
+And User Chooses Ground Shipping Method.....................................failed
+And User provide invalid payment details....................................skipped
+Then User should see a payment error message................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Scenario of user Login and Changing Account Info" name="Changing Credentials from My Account Page" time="9.965">
+<system-out><![CDATA[
+Given User LogIn Valid......................................................passed
+And user navigates to My Account page.......................................passed
+When user changes gender to female..........................................passed
+And user changes Name.......................................................passed
+And user changes date of birthday...........................................passed
+And user changes email......................................................passed
+And user clicks save........................................................passed
+Then My Account info is Updated.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User can navigate to the social media pages for the website" name="User navigates to social media pages" time="21.287">
+<system-out><![CDATA[
+Given User is on the homepage...............................................passed
+When User verifies the presence of social media icons.......................passed
+And User clicks on the Facebook icon........................................passed
+Then Facebook page should be opened.........................................passed
+When User clicks on the Twitter icon........................................passed
+Then Twitter page should be opened..........................................passed
+When User clicks on the RSS icon............................................passed
+Then RSS page should be opened..............................................passed
+When User clicks on the YouTube icon........................................passed
+Then YouTube channel should be opened.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login with invalid data" name="User login with correct email and wrong password and test forget password" time="8.046">
+<system-out><![CDATA[
+Given User go to login page.................................................passed
+When User Enter the email...................................................passed
+And User enter password.....................................................passed
+And User click on login button..............................................passed
+Then User can't login successfully..........................................passed
+When User click on forget password..........................................passed
+And User write his recovery email address...................................passed
+And User click on recover button............................................passed
+Then the account is recovered successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Review a specific product in the website" name="User can review a product he bought" time="11.452">
+<system-out><![CDATA[
+Given User LogIn Valid......................................................passed
+When User click on my account...............................................passed
+And User click on Orders....................................................passed
+And User click on details...................................................passed
+And User select a specific product from a previous order....................passed
+And User click on add review and write the review details...................passed
+Then User Submit his review.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing wishlist" name="Add item to Wishlist" time="8.725">
+<system-out><![CDATA[
+Given User browse for an item...............................................passed
+And User add the item to my wishlist........................................passed
+And User browse for another item............................................passed
+Then User should see the items in the wishlist..............................passed
+And User change the Qty of the second item..................................passed
+And user the click update wishlist..........................................passed
+Then The user should see the new qty and price..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing Tags" name="Browse product by tag" time="7.266">
+<system-out><![CDATA[
+Given User browse computers category........................................passed
+And User click view all tags................................................passed
+Then User should see all the tags...........................................passed
+And User click on shoes tag.................................................passed
+Then User show see the product under this tags..............................passed
+]]></system-out>
+</testcase>
+</testsuite>
