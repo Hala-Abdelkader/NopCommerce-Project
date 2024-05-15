@@ -1,5 +1,3 @@
-### NopCommerce Project
-
 ## Contributors
 
 - Hala Abdelkader
