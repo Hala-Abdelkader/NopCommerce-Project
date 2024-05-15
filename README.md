@@ -1,4 +1,4 @@
-# NopCommerce Project
+![WhatsApp Image 2024-05-15 at 00 27 20_583fa880](https://github.com/Hala-Abdelkader/NopCommerce-Project/assets/112490322/bb79909f-5e41-45a5-8ed9-6660cd8fcde0)![WhatsApp Image 2024-05-15 at 00 27 19_dd3dcd89](https://github.com/Hala-Abdelkader/NopCommerce-Project/assets/112490322/595b2888-eb95-480a-9063-a052dc82976a)# NopCommerce Project
 
 ## Contributors
 
@@ -22,4 +22,13 @@ Throughout this project, our primary objective is to develop and execute a suite
 ## 3.ROI
 
 ![EXCEL_Tw5ZfJCLJq](https://github.com/Hala-Abdelkader/NopCommerce-Project/assets/112490322/b4d9ede9-7d03-4334-9a39-32f3a4e24fba)
+
+## 4.Tool Selection process and its justification
+![WhatsApp Image 2024-05-15 at 00 27 19_dd3dcd89](https://github.com/Hala-Abdelkader/NopCommerce-Project/assets/112490322/8bd07272-1907-43b7-a58a-7d1a573a30ea)
+![WhatsApp Image 2024-05-15 at 00 27 20_583fa880](https://github.com/Hala-Abdelkader/NopCommerce-Project/assets/112490322/95738b2c-4c2d-4c59-a9fd-173c8307c708)
+
+
+
+
+
 
